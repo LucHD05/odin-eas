@@ -1,12 +1,40 @@
-#grid {
+#container {
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    padding: 10px;
     aspect-ratio: 1;
-    max-height: 100%;
-    max-width: 100%;
+    z-index: 1;
+    position: absolute;
+    float: left;
+    min-height: 0;
+    height: 420px;
+    width: 420px;
+    user-select: none;
+    border: 1px solid black;
 }
 
 .grid-item {
-    border: 1px solid black;
+    color: grey;
+    aspect-ratio: 1;
+    width: 1fr;
+    height: 1fr;
+}
+
+#scratch-card {
+    height: 420px;
+    width: 420px;
+    background-color: blue;
+    position: relative;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
 }
