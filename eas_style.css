@@ -31,7 +31,7 @@ html, body {
 }
 
 .center {
-    height: 100%;
+    height: calc(100% - 53.2px);
     width: 100%;
     display: flex;
     justify-content: center;

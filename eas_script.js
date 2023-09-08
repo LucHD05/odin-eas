@@ -35,10 +35,12 @@ mouseDown--;
 
 function changeColor(i) {
     if(mouseDown > 0){
-        i.target.style.backgroundColor = "red"
+        var choosenColor = document.getElementById("colorPicker").value;
+        i.target.style.backgroundColor = choosenColor
     }
 }
 
 function changeColorClick(i) {
-    i.target.style.backgroundColor = "red"
+    var choosenColor = document.getElementById("colorPicker").value;
+    i.target.style.backgroundColor = choosenColor
 }
